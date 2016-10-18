@@ -1,0 +1,63 @@
+Language model created by QuickLM on Mon May 13 02:21:57 EDT 2013
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 4 sentences and 12 words
+
+\data\
+ngram 1=12
+ngram 2=16
+ngram 3=12
+
+\1-grams:
+-1.0000 </s> -0.3010
+-1.0000 <s> -0.2553
+-1.3010 A -0.2788
+-1.6021 BALLOON -0.2553
+-1.6021 BRIDGE -0.2553
+-1.6021 CROSS -0.2788
+-1.6021 HAH -0.2788
+-1.6021 HALLOON -0.2553
+-1.6021 HRIDGE -0.2553
+-1.6021 HROSS -0.2788
+-1.6021 POP -0.2788
+-1.3010 THE -0.2788
+
+\2-grams:
+-0.9031 <s> CROSS 0.0000
+-0.9031 <s> HAH 0.0000
+-0.9031 <s> HROSS 0.0000
+-0.9031 <s> POP 0.0000
+-0.6021 A BALLOON 0.0000
+-0.6021 A HALLOON 0.0000
+-0.3010 BALLOON </s> -0.3010
+-0.3010 BRIDGE </s> -0.3010
+-0.3010 CROSS THE -0.1761
+-0.3010 HAH A -0.1761
+-0.3010 HALLOON </s> -0.3010
+-0.3010 HRIDGE </s> -0.3010
+-0.3010 HROSS THE -0.1761
+-0.3010 POP A -0.1761
+-0.6021 THE BRIDGE 0.0000
+-0.6021 THE HRIDGE 0.0000
+
+\3-grams:
+-0.3010 <s> CROSS THE
+-0.3010 <s> HAH A
+-0.3010 <s> HROSS THE
+-0.3010 <s> POP A
+-0.3010 A BALLOON </s>
+-0.3010 A HALLOON </s>
+-0.3010 CROSS THE BRIDGE
+-0.3010 HAH A HALLOON
+-0.3010 HROSS THE HRIDGE
+-0.3010 POP A BALLOON
+-0.3010 THE BRIDGE </s>
+-0.3010 THE HRIDGE </s>
+
+\end\

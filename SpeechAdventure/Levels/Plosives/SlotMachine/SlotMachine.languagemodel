@@ -1,0 +1,49 @@
+Language model created by QuickLM on Fri Oct 18 18:13:59 EDT 2013
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 6 sentences and 8 words
+
+\data\
+ngram 1=8
+ngram 2=12
+ngram 3=6
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.5563 BALL -0.2218
+-1.5563 BOAT -0.2218
+-1.5563 BUNNY -0.2218
+-1.5563 HALL -0.2218
+-1.5563 HOAT -0.2218
+-1.5563 HONEY -0.2218
+
+\2-grams:
+-1.0792 <s> BALL 0.0000
+-1.0792 <s> BOAT 0.0000
+-1.0792 <s> BUNNY 0.0000
+-1.0792 <s> HALL 0.0000
+-1.0792 <s> HOAT 0.0000
+-1.0792 <s> HONEY 0.0000
+-0.3010 BALL </s> -0.3010
+-0.3010 BOAT </s> -0.3010
+-0.3010 BUNNY </s> -0.3010
+-0.3010 HALL </s> -0.3010
+-0.3010 HOAT </s> -0.3010
+-0.3010 HONEY </s> -0.3010
+
+\3-grams:
+-0.3010 <s> BALL </s>
+-0.3010 <s> BOAT </s>
+-0.3010 <s> BUNNY </s>
+-0.3010 <s> HALL </s>
+-0.3010 <s> HOAT </s>
+-0.3010 <s> HONEY </s>
+
+\end\

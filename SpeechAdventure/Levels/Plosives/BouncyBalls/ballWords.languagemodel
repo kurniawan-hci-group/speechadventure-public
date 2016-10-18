@@ -1,0 +1,49 @@
+Language model created by QuickLM on Wed May 25 14:43:39 EDT 2016
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 4 sentences and 8 words
+
+\data\
+ngram 1=8
+ngram 2=10
+ngram 3=8
+
+\1-grams:
+-0.9031 </s> -0.3010
+-0.9031 <s> -0.2430
+-1.2041 BALL -0.2430
+-1.5051 BASKET -0.2730
+-1.5051 BOUNCE -0.2730
+-1.2041 HALL -0.2430
+-1.5051 HASKET -0.2730
+-1.5051 HOUNCE -0.2730
+
+\2-grams:
+-0.9031 <s> BASKET 0.0000
+-0.9031 <s> BOUNCE 0.0000
+-0.9031 <s> HASKET 0.0000
+-0.9031 <s> HOUNCE 0.0000
+-0.3010 BALL </s> -0.3010
+-0.3010 BASKET BALL 0.0000
+-0.3010 BOUNCE BALL 0.0000
+-0.3010 HALL </s> -0.3010
+-0.3010 HASKET HALL 0.0000
+-0.3010 HOUNCE HALL 0.0000
+
+\3-grams:
+-0.3010 <s> BASKET BALL
+-0.3010 <s> BOUNCE BALL
+-0.3010 <s> HASKET HALL
+-0.3010 <s> HOUNCE HALL
+-0.3010 BASKET BALL </s>
+-0.3010 BOUNCE BALL </s>
+-0.3010 HASKET HALL </s>
+-0.3010 HOUNCE HALL </s>
+
+\end\

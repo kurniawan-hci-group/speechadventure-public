@@ -1,0 +1,65 @@
+Language model created by QuickLM on Mon May 11 12:17:53 EDT 2015
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 10 sentences and 12 words
+
+\data\
+ngram 1=12
+ngram 2=20
+ngram 3=10
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.7782 BOO -0.2218
+-1.7782 HOINK -0.2218
+-1.7782 HOO -0.2218
+-1.7782 HOOF -0.2218
+-1.7782 OAR -0.2218
+-1.7782 OINK -0.2218
+-1.7782 ROAR -0.2218
+-1.7782 TWEET -0.2218
+-1.7782 WEET -0.2218
+-1.7782 WOOF -0.2218
+
+\2-grams:
+-1.3010 <s> BOO 0.0000
+-1.3010 <s> HOINK 0.0000
+-1.3010 <s> HOO 0.0000
+-1.3010 <s> HOOF 0.0000
+-1.3010 <s> OAR 0.0000
+-1.3010 <s> OINK 0.0000
+-1.3010 <s> ROAR 0.0000
+-1.3010 <s> TWEET 0.0000
+-1.3010 <s> WEET 0.0000
+-1.3010 <s> WOOF 0.0000
+-0.3010 BOO </s> -0.3010
+-0.3010 HOINK </s> -0.3010
+-0.3010 HOO </s> -0.3010
+-0.3010 HOOF </s> -0.3010
+-0.3010 OAR </s> -0.3010
+-0.3010 OINK </s> -0.3010
+-0.3010 ROAR </s> -0.3010
+-0.3010 TWEET </s> -0.3010
+-0.3010 WEET </s> -0.3010
+-0.3010 WOOF </s> -0.3010
+
+\3-grams:
+-0.3010 <s> BOO </s>
+-0.3010 <s> HOINK </s>
+-0.3010 <s> HOO </s>
+-0.3010 <s> HOOF </s>
+-0.3010 <s> OAR </s>
+-0.3010 <s> OINK </s>
+-0.3010 <s> ROAR </s>
+-0.3010 <s> TWEET </s>
+-0.3010 <s> WEET </s>
+-0.3010 <s> WOOF </s>
+
+\end\

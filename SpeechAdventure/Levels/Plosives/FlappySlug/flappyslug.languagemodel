@@ -1,0 +1,39 @@
+Language model created by QuickLM on Thu May 26 16:36:00 EDT 2016
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 2 sentences and 6 words
+
+\data\
+ngram 1=6
+ngram 2=6
+ngram 3=4
+
+\1-grams:
+-0.9031 </s> -0.3010
+-0.9031 <s> -0.2430
+-1.2041 BOUNCE -0.2730
+-1.2041 HOUNCE -0.2730
+-1.2041 SLUG -0.2430
+-1.2041 SLUH -0.2430
+
+\2-grams:
+-0.6021 <s> BOUNCE 0.0000
+-0.6021 <s> HOUNCE 0.0000
+-0.3010 BOUNCE SLUG 0.0000
+-0.3010 HOUNCE SLUH 0.0000
+-0.3010 SLUG </s> -0.3010
+-0.3010 SLUH </s> -0.3010
+
+\3-grams:
+-0.3010 <s> BOUNCE SLUG
+-0.3010 <s> HOUNCE SLUH
+-0.3010 BOUNCE SLUG </s>
+-0.3010 HOUNCE SLUH </s>
+
+\end\

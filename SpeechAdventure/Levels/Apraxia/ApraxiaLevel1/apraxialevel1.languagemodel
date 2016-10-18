@@ -1,0 +1,53 @@
+Language model created by QuickLM on Mon May 16 23:17:15 EDT 2016
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 7 sentences and 9 words
+
+\data\
+ngram 1=9
+ngram 2=14
+ngram 3=7
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.6232 HAMMER -0.2218
+-1.6232 LADDER -0.2218
+-1.6232 LOCK -0.2218
+-1.6232 RABBIT -0.2218
+-1.6232 RAIN -0.2218
+-1.6232 ROCKET -0.2218
+-1.6232 SEAL -0.2218
+
+\2-grams:
+-1.1461 <s> HAMMER 0.0000
+-1.1461 <s> LADDER 0.0000
+-1.1461 <s> LOCK 0.0000
+-1.1461 <s> RABBIT 0.0000
+-1.1461 <s> RAIN 0.0000
+-1.1461 <s> ROCKET 0.0000
+-1.1461 <s> SEAL 0.0000
+-0.3010 HAMMER </s> -0.3010
+-0.3010 LADDER </s> -0.3010
+-0.3010 LOCK </s> -0.3010
+-0.3010 RABBIT </s> -0.3010
+-0.3010 RAIN </s> -0.3010
+-0.3010 ROCKET </s> -0.3010
+-0.3010 SEAL </s> -0.3010
+
+\3-grams:
+-0.3010 <s> HAMMER </s>
+-0.3010 <s> LADDER </s>
+-0.3010 <s> LOCK </s>
+-0.3010 <s> RABBIT </s>
+-0.3010 <s> RAIN </s>
+-0.3010 <s> ROCKET </s>
+-0.3010 <s> SEAL </s>
+
+\end\

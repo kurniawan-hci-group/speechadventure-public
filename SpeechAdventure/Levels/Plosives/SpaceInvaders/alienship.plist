@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>alienship.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{1528,990}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{1528,990}}</string>
+                <key>sourceSize</key>
+                <string>{1528,990}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>alienship.png</string>
+            <key>size</key>
+            <string>{1532,994}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:2a0f4391bb4c510559beef46a11a1adc:776a70ab4811fd42f1fc8dc72df66b05:eaa3d0a431c4cc1da9932ce6e5570fd1$</string>
+            <key>textureFileName</key>
+            <string>alienship.png</string>
+        </dict>
+    </dict>
+</plist>

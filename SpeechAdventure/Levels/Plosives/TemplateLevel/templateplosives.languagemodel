@@ -1,0 +1,59 @@
+Language model created by QuickLM on Wed May 25 15:00:52 EDT 2016
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 6 sentences and 10 words
+
+\data\
+ngram 1=10
+ngram 2=14
+ngram 3=12
+
+\1-grams:
+-0.9031 </s> -0.3010
+-0.9031 <s> -0.2430
+-1.6812 BALL -0.2430
+-1.6812 BOAT -0.2430
+-1.2041 EAH -0.2730
+-1.2041 EAT -0.2730
+-1.6812 HALL -0.2430
+-1.6812 HOAH -0.2430
+-1.6812 LADDER -0.2430
+-1.6812 LAHHER -0.2430
+
+\2-grams:
+-0.6021 <s> EAH 0.0000
+-0.6021 <s> EAT 0.0000
+-0.3010 BALL </s> -0.3010
+-0.3010 BOAT </s> -0.3010
+-0.7782 EAH HALL 0.0000
+-0.7782 EAH HOAH 0.0000
+-0.7782 EAH LAHHER 0.0000
+-0.7782 EAT BALL 0.0000
+-0.7782 EAT BOAT 0.0000
+-0.7782 EAT LADDER 0.0000
+-0.3010 HALL </s> -0.3010
+-0.3010 HOAH </s> -0.3010
+-0.3010 LADDER </s> -0.3010
+-0.3010 LAHHER </s> -0.3010
+
+\3-grams:
+-0.7782 <s> EAH HALL
+-0.7782 <s> EAH HOAH
+-0.7782 <s> EAH LAHHER
+-0.7782 <s> EAT BALL
+-0.7782 <s> EAT BOAT
+-0.7782 <s> EAT LADDER
+-0.3010 EAH HALL </s>
+-0.3010 EAH HOAH </s>
+-0.3010 EAH LAHHER </s>
+-0.3010 EAT BALL </s>
+-0.3010 EAT BOAT </s>
+-0.3010 EAT LADDER </s>
+
+\end\

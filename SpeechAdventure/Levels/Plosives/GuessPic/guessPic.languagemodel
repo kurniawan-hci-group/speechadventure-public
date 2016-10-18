@@ -1,0 +1,65 @@
+Language model created by QuickLM on Mon Jun  1 18:21:28 EDT 2015
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 10 sentences and 12 words
+
+\data\
+ngram 1=12
+ngram 2=20
+ngram 3=10
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.7782 EDDY -0.2218
+-1.7782 HE -0.2218
+-1.7782 HOON -0.2218
+-1.7782 KEY -0.2218
+-1.7782 MOON -0.2218
+-1.7782 SAIL -0.2218
+-1.7782 SNAIL -0.2218
+-1.7782 TEDDY -0.2218
+-1.7782 ZACK -0.2218
+-1.7782 ZAK -0.2218
+
+\2-grams:
+-1.3010 <s> EDDY 0.0000
+-1.3010 <s> HE 0.0000
+-1.3010 <s> HOON 0.0000
+-1.3010 <s> KEY 0.0000
+-1.3010 <s> MOON 0.0000
+-1.3010 <s> SAIL 0.0000
+-1.3010 <s> SNAIL 0.0000
+-1.3010 <s> TEDDY 0.0000
+-1.3010 <s> ZACK 0.0000
+-1.3010 <s> ZAK 0.0000
+-0.3010 EDDY </s> -0.3010
+-0.3010 HE </s> -0.3010
+-0.3010 HOON </s> -0.3010
+-0.3010 KEY </s> -0.3010
+-0.3010 MOON </s> -0.3010
+-0.3010 SAIL </s> -0.3010
+-0.3010 SNAIL </s> -0.3010
+-0.3010 TEDDY </s> -0.3010
+-0.3010 ZACK </s> -0.3010
+-0.3010 ZAK </s> -0.3010
+
+\3-grams:
+-0.3010 <s> EDDY </s>
+-0.3010 <s> HE </s>
+-0.3010 <s> HOON </s>
+-0.3010 <s> KEY </s>
+-0.3010 <s> MOON </s>
+-0.3010 <s> SAIL </s>
+-0.3010 <s> SNAIL </s>
+-0.3010 <s> TEDDY </s>
+-0.3010 <s> ZACK </s>
+-0.3010 <s> ZAK </s>
+
+\end\

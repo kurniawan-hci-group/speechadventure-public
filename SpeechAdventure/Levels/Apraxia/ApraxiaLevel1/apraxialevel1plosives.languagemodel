@@ -1,0 +1,53 @@
+Language model created by QuickLM on Tue May 17 00:24:23 EDT 2016
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 7 sentences and 9 words
+
+\data\
+ngram 1=9
+ngram 2=14
+ngram 3=7
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.6232 BALL -0.2218
+-1.6232 BIRD -0.2218
+-1.6232 BOAT -0.2218
+-1.6232 DOG -0.2218
+-1.6232 LADDER -0.2218
+-1.6232 RABBIT -0.2218
+-1.6232 TEDDY -0.2218
+
+\2-grams:
+-1.1461 <s> BALL 0.0000
+-1.1461 <s> BIRD 0.0000
+-1.1461 <s> BOAT 0.0000
+-1.1461 <s> DOG 0.0000
+-1.1461 <s> LADDER 0.0000
+-1.1461 <s> RABBIT 0.0000
+-1.1461 <s> TEDDY 0.0000
+-0.3010 BALL </s> -0.3010
+-0.3010 BIRD </s> -0.3010
+-0.3010 BOAT </s> -0.3010
+-0.3010 DOG </s> -0.3010
+-0.3010 LADDER </s> -0.3010
+-0.3010 RABBIT </s> -0.3010
+-0.3010 TEDDY </s> -0.3010
+
+\3-grams:
+-0.3010 <s> BALL </s>
+-0.3010 <s> BIRD </s>
+-0.3010 <s> BOAT </s>
+-0.3010 <s> DOG </s>
+-0.3010 <s> LADDER </s>
+-0.3010 <s> RABBIT </s>
+-0.3010 <s> TEDDY </s>
+
+\end\

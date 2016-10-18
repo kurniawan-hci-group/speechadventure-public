@@ -1,0 +1,41 @@
+Language model created by QuickLM on Tue May 10 18:31:59 EDT 2016
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 4 sentences and 6 words
+
+\data\
+ngram 1=6
+ngram 2=8
+ngram 3=4
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.3802 BASKET -0.2218
+-1.3802 BOUNCE -0.2218
+-1.3802 HASKET -0.2218
+-1.3802 HOUNCE -0.2218
+
+\2-grams:
+-0.9031 <s> BASKET 0.0000
+-0.9031 <s> BOUNCE 0.0000
+-0.9031 <s> HASKET 0.0000
+-0.9031 <s> HOUNCE 0.0000
+-0.3010 BASKET </s> -0.3010
+-0.3010 BOUNCE </s> -0.3010
+-0.3010 HASKET </s> -0.3010
+-0.3010 HOUNCE </s> -0.3010
+
+\3-grams:
+-0.3010 <s> BASKET </s>
+-0.3010 <s> BOUNCE </s>
+-0.3010 <s> HASKET </s>
+-0.3010 <s> HOUNCE </s>
+
+\end\

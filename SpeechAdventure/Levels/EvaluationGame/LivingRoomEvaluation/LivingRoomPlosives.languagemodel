@@ -1,0 +1,82 @@
+Language model created by QuickLM on Mon May 13 02:05:25 EDT 2013
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 6 sentences and 17 words
+
+\data\
+ngram 1=17
+ngram 2=24
+ngram 3=18
+
+\1-grams:
+-1.0000 </s> -0.3010
+-1.0000 <s> -0.2553
+-1.4771 A -0.2863
+-1.7782 BOOTS -0.2553
+-1.7782 DOOR -0.2553
+-1.7782 HAH -0.2553
+-1.7782 HAIR -0.2863
+-1.7782 HAT -0.2553
+-1.7782 HOOR -0.2553
+-1.7782 HOOTS -0.2553
+-1.7782 HUT -0.2863
+-1.7782 OHEN -0.2863
+-1.4771 ON -0.2863
+-1.7782 OPEN -0.2863
+-1.7782 PUT -0.2863
+-1.4771 THE -0.2863
+-1.7782 WEAR -0.2863
+
+\2-grams:
+-1.0792 <s> HAIR 0.0000
+-1.0792 <s> HUT 0.0000
+-1.0792 <s> OHEN 0.0000
+-1.0792 <s> OPEN 0.0000
+-1.0792 <s> PUT 0.0000
+-1.0792 <s> WEAR 0.0000
+-0.6021 A HAH 0.0000
+-0.6021 A HAT 0.0000
+-0.3010 BOOTS </s> -0.3010
+-0.3010 DOOR </s> -0.3010
+-0.3010 HAH </s> -0.3010
+-0.3010 HAIR A -0.1761
+-0.3010 HAT </s> -0.3010
+-0.3010 HOOR </s> -0.3010
+-0.3010 HOOTS </s> -0.3010
+-0.3010 HUT ON -0.1761
+-0.3010 OHEN THE -0.1761
+-0.6021 ON BOOTS 0.0000
+-0.6021 ON HOOTS 0.0000
+-0.3010 OPEN THE -0.1761
+-0.3010 PUT ON -0.1761
+-0.6021 THE DOOR 0.0000
+-0.6021 THE HOOR 0.0000
+-0.3010 WEAR A -0.1761
+
+\3-grams:
+-0.3010 <s> HAIR A
+-0.3010 <s> HUT ON
+-0.3010 <s> OHEN THE
+-0.3010 <s> OPEN THE
+-0.3010 <s> PUT ON
+-0.3010 <s> WEAR A
+-0.3010 A HAH </s>
+-0.3010 A HAT </s>
+-0.3010 HAIR A HAH
+-0.3010 HUT ON HOOTS
+-0.3010 OHEN THE HOOR
+-0.3010 ON BOOTS </s>
+-0.3010 ON HOOTS </s>
+-0.3010 OPEN THE DOOR
+-0.3010 PUT ON BOOTS
+-0.3010 THE DOOR </s>
+-0.3010 THE HOOR </s>
+-0.3010 WEAR A HAT
+
+\end\
