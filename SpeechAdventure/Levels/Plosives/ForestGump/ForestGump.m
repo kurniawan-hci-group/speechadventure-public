@@ -152,7 +152,7 @@ CCPhysicsNode *physicsWorld;
 // -----------------------------------------------------------------------
 
 - (void)receiveOEEvent:(OEEvent*) speechEvent {
-    if(speechEvent.eventType == RapidEarsPartial) {
+    if(speechEvent.eventType == OpenEarsResponse) {
         if (([speechEvent.text rangeOfString:@"GO"].location != NSNotFound)) /*|| ([speechEvent.text rangeOfString:@"HOUNCE"].location != NSNotFound))*/ {
             //add shit
             [car.physicsBody applyImpulse:ccp(10,40)];

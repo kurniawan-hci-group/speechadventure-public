@@ -171,7 +171,7 @@
     //NSLog(@"GuessPic received speechEvent.\ntext:%@\nscore:%@",speechEvent.text,speechEvent.recognitionScore);
     
     //[self.currentSentenceStats addUtterance:speechEvent.text];
-    if(speechEvent.eventType == RapidEarsPartial) {
+    if(speechEvent.eventType == OpenEarsResponse) {
         if (([speechEvent.text rangeOfString:@"GO"].location != NSNotFound && pic_num == 0)) {
             [self keyFade];
         }

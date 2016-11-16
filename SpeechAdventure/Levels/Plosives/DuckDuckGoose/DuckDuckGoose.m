@@ -158,7 +158,7 @@
     NSString * filteredSpeechText = [[NSString alloc] initWithString:[self truncateFromPreviousValidSpeech:speechEvent.text]];
     //NSString * filteredSpeechText = [[NSString alloc] initWithString:speechEvent.text];
     NSLog(@"Filtered speechEvent.\ntext:%@",filteredSpeechText);
-    if(speechEvent.eventType == RapidEarsPartial) {
+    if(speechEvent.eventType == OpenEarsResponse) {
         if (([filteredSpeechText rangeOfString:@"CORN"].location != NSNotFound)) {
             [self duck];
             [self updatePreviousValidSpeech:speechEvent.text];

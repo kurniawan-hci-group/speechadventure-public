@@ -329,7 +329,7 @@
     //NSLog(@"Received speechEvent.\ntext:%@\nscore:%@",speechEvent.text,speechEvent.recognitionScore);
     
     //[self.currentSentenceStats addUtterance:speechEvent.text];
-    if(speechEvent.eventType == RapidEarsPartial) {
+    if(speechEvent.eventType == OpenEarsResponse) {
         if (([speechEvent.text rangeOfString:@"BOO"].location != NSNotFound && next_num == 0)) {
             //[self displayMissing];
             [self booFade];

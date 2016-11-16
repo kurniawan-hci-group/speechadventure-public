@@ -400,7 +400,7 @@
 {
     NSString * filteredSpeechText = [[NSString alloc] initWithString:[self truncateFromPreviousValidSpeech:speechEvent.text]];
     NSLog(@"Filtered Speech: %@", filteredSpeechText);
-    if([self targetSentence].length > 1 && speechEvent.eventType == RapidEarsPartial) {
+    if([self targetSentence].length > 1 && speechEvent.eventType == OpenEarsResponse) {
         NSString * phraseParts = [self checkForPhraseParts:[self targetSentence] currentHypothesis:filteredSpeechText];
         bool bounced = NO;
         if(phraseParts != nil && [self checkIfPhraseExists:[self targetSentence] currentHypothesis:phraseParts]) {

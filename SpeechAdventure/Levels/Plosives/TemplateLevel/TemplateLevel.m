@@ -263,7 +263,7 @@
 {
     //NSLog(@"Received speechEvent.\ntext:%@\nscore:%@",speechEvent.text,speechEvent.recognitionScore);
     
-    if([self targetSentence].length > 1 && speechEvent.eventType == RapidEarsPartial) {
+    if([self targetSentence].length > 1 && speechEvent.eventType == OpenEarsResponse) {
         NSString * phraseParts = [self checkForPhraseParts:[self targetSentence] currentHypothesis:speechEvent.text];
         bool phraseSaid = NO;
         if (phraseParts!= nil && [self checkIfPhraseExists:@"EAT CORN" currentHypothesis:phraseParts]) {

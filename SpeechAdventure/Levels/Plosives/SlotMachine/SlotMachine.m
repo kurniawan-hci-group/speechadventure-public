@@ -138,7 +138,7 @@
 {
     //NSLog(@"Received speechEvent.\ntext:%@\nscore:%@",speechEvent.text,speechEvent.recognitionScore);
     
-    if(speechEvent.eventType == RapidEarsPartial) {
+    if(speechEvent.eventType == OpenEarsResponse) {
         if (([speechEvent.text rangeOfString:slotWord[0]].location != NSNotFound))
         {
             [self highlightObject:0];

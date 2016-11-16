@@ -224,7 +224,7 @@
     
     //NSLog(@"PopABalloonEval received speechEvent.\ntext:%@\nscore:%@",speechEvent.text,speechEvent.recognitionScore);
     
-    if([self targetSentence].length > 1 && speechEvent.eventType == RapidEarsPartial) {
+    if([self targetSentence].length > 1 && speechEvent.eventType == OpenEarsResponse) {
         NSString * phraseParts = [self checkForPhraseParts:[self targetSentence] currentHypothesis:speechEvent.text];
         
         NSString * currentSentenceFormatted = [[self targetSentence] lowercaseString];

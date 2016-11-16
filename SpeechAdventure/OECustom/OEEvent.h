@@ -12,8 +12,6 @@
 
 typedef enum {
     OpenEarsResponse,
-    RapidEarsPartial,
-    RapidEarsResponse,
     OpenEarsStateChange
 } EventType;
 

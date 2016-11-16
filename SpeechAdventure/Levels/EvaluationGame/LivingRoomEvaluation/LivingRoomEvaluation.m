@@ -370,7 +370,7 @@
 {
     //NSLog(@"LivingRoomEval received speechEvent.\ntext:%@\ntargetsentence:%@",speechEvent.text,[self targetSentence]);
     
-    if([self targetSentence].length > 1 && speechEvent.eventType == RapidEarsPartial) {
+    if([self targetSentence].length > 1 && speechEvent.eventType == OpenEarsResponse) {
         NSString * phraseParts = [self checkForPhraseParts:[self targetSentence] currentHypothesis:speechEvent.text];
         BOOL phraseSaid = NO;
         if(phraseParts != nil && [self checkIfPhraseExists:[self targetSentence] currentHypothesis:phraseParts]) {

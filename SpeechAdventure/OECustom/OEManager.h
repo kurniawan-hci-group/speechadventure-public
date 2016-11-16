@@ -12,7 +12,6 @@
 @class OEPocketsphinxController;
 
 #import <OpenEars/OEEventsObserver.h>
-#import <RapidEars/OEEventsObserver+RapidEars.h>
 
 #import <OpenEars/OELanguageModelGenerator.h>
 

@@ -165,7 +165,7 @@
 {
     //NSLog(@"Received speechEvent.\ntext:%@\nscore:%@",speechEvent.text,speechEvent.recognitionScore);
     
-    if(speechEvent.eventType == RapidEarsPartial) {
+    if(speechEvent.eventType == OpenEarsResponse) {
         if (([speechEvent.text rangeOfString:@"EAT CORN"].location != NSNotFound)) {
             [self eatCorn];
             [self showCheckmark];

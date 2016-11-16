@@ -52,6 +52,8 @@
 		1471694E1C0D476A00FB8EA4 /* InstructionEvaluation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1471694D1C0D476A00FB8EA4 /* InstructionEvaluation.m */; };
 		147A6AB71CEEC82C00969549 /* longspin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 147A6AB51CEEC82C00969549 /* longspin.wav */; };
 		147A6AB81CEEC82C00969549 /* singlespin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 147A6AB61CEEC82C00969549 /* singlespin.wav */; };
+		147AF9501DDB991B0053606A /* AcousticModelZak.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 147AF94F1DDB991B0053606A /* AcousticModelZak.bundle */; };
+		147AF95A1DDBB8A60053606A /* arpabet.dic in Resources */ = {isa = PBXBuildFile; fileRef = 147AF9591DDBB8A60053606A /* arpabet.dic */; };
 		14B779091BC5B3C0002D295F /* MainMenu_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B779061BC5B3C0002D295F /* MainMenu_Background.png */; };
 		14B7790A1BC5B3C0002D295F /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B779081BC5B3C0002D295F /* MainMenu.m */; };
 		14B7791C1BC5B3D8002D295F /* backarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B7790C1BC5B3D7002D295F /* backarrow.png */; };
@@ -183,8 +185,6 @@
 		14B77A771BC5B3F1002D295F /* StatDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B779EB1BC5B3F1002D295F /* StatDatabase.m */; };
 		14B77A781BC5B3F1002D295F /* StatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B779ED1BC5B3F1002D295F /* StatManager.m */; };
 		14B77A7D1BC5B3FE002D295F /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B77A791BC5B3FE002D295F /* OpenEars.framework */; };
-		14B77A7E1BC5B3FE002D295F /* RapidEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B77A7A1BC5B3FE002D295F /* RapidEars.framework */; };
-		14B77A7F1BC5B3FE002D295F /* Rejecto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B77A7B1BC5B3FE002D295F /* Rejecto.framework */; };
 		14B77A801BC5B3FE002D295F /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B77A7C1BC5B3FE002D295F /* Slt.framework */; };
 		14B77AD21BC5B4C8002D295F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B77AD11BC5B4C8002D295F /* Accelerate.framework */; };
 		14BAC6DC1CF62C22008F9020 /* templateplosives.dic in Resources */ = {isa = PBXBuildFile; fileRef = 14BAC6DA1CF62C22008F9020 /* templateplosives.dic */; };
@@ -502,6 +502,8 @@
 		1471694D1C0D476A00FB8EA4 /* InstructionEvaluation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionEvaluation.m; sourceTree = "<group>"; };
 		147A6AB51CEEC82C00969549 /* longspin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = longspin.wav; path = speechadventure/Levels/Apraxia/ApraxiaLevel2/longspin.wav; sourceTree = SOURCE_ROOT; };
 		147A6AB61CEEC82C00969549 /* singlespin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = singlespin.wav; path = speechadventure/Levels/Apraxia/ApraxiaLevel2/singlespin.wav; sourceTree = SOURCE_ROOT; };
+		147AF94F1DDB991B0053606A /* AcousticModelZak.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AcousticModelZak.bundle; path = SpeechAdventure/AcousticModelZak.bundle; sourceTree = SOURCE_ROOT; };
+		147AF9591DDBB8A60053606A /* arpabet.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = arpabet.dic; path = ../../../../Downloads/arpabet.dic; sourceTree = "<group>"; };
 		14B779061BC5B3C0002D295F /* MainMenu_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MainMenu_Background.png; path = Classes/MainMenu_Background.png; sourceTree = "<group>"; };
 		14B779071BC5B3C0002D295F /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenu.h; path = Classes/MainMenu.h; sourceTree = "<group>"; };
 		14B779081BC5B3C0002D295F /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenu.m; path = Classes/MainMenu.m; sourceTree = "<group>"; };
@@ -659,8 +661,6 @@
 		14B779EC1BC5B3F1002D295F /* StatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatManager.h; sourceTree = "<group>"; };
 		14B779ED1BC5B3F1002D295F /* StatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatManager.m; sourceTree = "<group>"; };
 		14B77A791BC5B3FE002D295F /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
-		14B77A7A1BC5B3FE002D295F /* RapidEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RapidEars.framework; sourceTree = "<group>"; };
-		14B77A7B1BC5B3FE002D295F /* Rejecto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Rejecto.framework; sourceTree = "<group>"; };
 		14B77A7C1BC5B3FE002D295F /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 		14B77AD11BC5B4C8002D295F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		14BAC6DA1CF62C22008F9020 /* templateplosives.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = templateplosives.dic; sourceTree = "<group>"; };
@@ -1279,8 +1279,6 @@
 				14D814C61BC5BA2900A05977 /* libsqlite3.tbd in Frameworks */,
 				14B77AD21BC5B4C8002D295F /* Accelerate.framework in Frameworks */,
 				14B77A801BC5B3FE002D295F /* Slt.framework in Frameworks */,
-				14B77A7E1BC5B3FE002D295F /* RapidEars.framework in Frameworks */,
-				14B77A7F1BC5B3FE002D295F /* Rejecto.framework in Frameworks */,
 				14BE9A131BC5A021000C6C93 /* libObjectiveChipmunk.a in Frameworks */,
 				14B77A7D1BC5B3FE002D295F /* OpenEars.framework in Frameworks */,
 				14D8151A1BC5D2B900A05977 /* libCorePlot-CocoaTouch.a in Frameworks */,
@@ -1806,12 +1804,12 @@
 		14BE9A111BC5A021000C6C93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				147AF9591DDBB8A60053606A /* arpabet.dic */,
+				147AF94F1DDB991B0053606A /* AcousticModelZak.bundle */,
 				1434F87F1CDA6B2A00B3FC51 /* AcousticModelAlternateEnglish1.bundle */,
 				14D814C71BC5BAA100A05977 /* QuartzCore.framework */,
 				14B77AD11BC5B4C8002D295F /* Accelerate.framework */,
 				14B77A791BC5B3FE002D295F /* OpenEars.framework */,
-				14B77A7A1BC5B3FE002D295F /* RapidEars.framework */,
-				14B77A7B1BC5B3FE002D295F /* Rejecto.framework */,
 				14B77A7C1BC5B3FE002D295F /* Slt.framework */,
 				14BE9A121BC5A021000C6C93 /* libObjectiveChipmunk.a */,
 				14D814C51BC5BA2900A05977 /* libsqlite3.tbd */,
@@ -2977,6 +2975,7 @@
 				14BE9A011BC5A020000C6C93 /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
 				A967E8FB1CBD818A00F01FF3 /* U.png in Resources */,
 				14B77A141BC5B3F1002D295F /* key.png in Resources */,
+				147AF9501DDB991B0053606A /* AcousticModelZak.bundle in Resources */,
 				14BAC6E81CF79613008F9020 /* flappyslug.languagemodel in Resources */,
 				14B779EF1BC5B3F1002D295F /* BaseStage.png in Resources */,
 				14BE99F01BC5A020000C6C93 /* Default-Landscape~ipad.png in Resources */,
@@ -3113,6 +3112,7 @@
 				14BAC6FF1CFCDDF4008F9020 /* tutorialbackarrow.wav in Resources */,
 				14B7791F1BC5B3D8002D295F /* ear_paused.png in Resources */,
 				14BAC6EC1CF7CCE1008F9020 /* cardback.png in Resources */,
+				147AF95A1DDBB8A60053606A /* arpabet.dic in Resources */,
 				14B77A581BC5B3F1002D295F /* TemplatePrompt.wav in Resources */,
 				A93EB4371CEBB44200C9D306 /* apraxiaLevel2.languagemodel in Resources */,
 				14B77A591BC5B3F1002D295F /* ear_base.png in Resources */,

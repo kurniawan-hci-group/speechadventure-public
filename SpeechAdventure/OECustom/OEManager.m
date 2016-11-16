@@ -7,10 +7,8 @@
 //
 
 #import <OpenEars/OEPocketsphinxController.h>
-#import <RapidEars/OEPocketsphinxController+RapidEars.h>
 #import <OpenEars/OELanguageModelGenerator.h>
 #import <OpenEars/OELogging.h>
-#import <Rejecto/OELanguageModelGenerator+Rejecto.h>
 #import <OpenEars/OEAcousticModel.h>
 
 #import "OEManager.h"
@@ -113,9 +111,7 @@
     if(!_listeningStarted) {
         NSLog(@"OpenEars: About to start listening");
         _pocketsphinxController = self.pocketsphinxController;
-        [_pocketsphinxController setRapidEarsToVerbose:FALSE]; // This defaults to FALSE but will give a lot of debug readout if set TRUE
-        [_pocketsphinxController setFinalizeHypothesis:TRUE]; // This defaults to TRUE and will return a final hypothesis, but can be turned off to save a little CPU and will then return no final hypothesis; only partial "live" hypotheses.
-        [_pocketsphinxController startRealtimeListeningWithLanguageModelAtPath:_modelGrammarPath dictionaryAtPath:_modelDictionaryPath acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelAlternateEnglish1"]];
+        [_pocketsphinxController startListeningWithLanguageModelAtPath:_modelGrammarPath dictionaryAtPath:_modelDictionaryPath acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelZak"] languageModelIsJSGF:NO];
         [_pocketsphinxController setVadThreshold:3.5f];
         _listeningStarted = true;
         NSLog(@"OpenEars: Started listening: %f", [_pocketsphinxController vadThreshold]);
@@ -221,7 +217,6 @@ static OEManager *theManager = nil;
 #pragma mark -
 #pragma mark OpenEarsEventsObserver delegate methods
 
-// pocketsphinxDidReceiveHypothesis is deprecated, please use rapidEarsDidDetectFinishedSpeechAsWordArray 
 - (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID
 {
     
@@ -234,31 +229,6 @@ static OEManager *theManager = nil;
     //generate the event
     OEEvent *voiceEvent = [[OEEvent alloc] initWithText:hypothesis andScore:[[NSNumber alloc] initWithDouble:[recognitionScore doubleValue]]];
     [self sendOEEventToCallbacks:voiceEvent];
-}
-
-- (void) rapidEarsDidReceiveLiveSpeechHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore
-{
-    //NSLog(@"detected words: %@",hypothesis);
-    OEEvent *voiceEvent = [[OEEvent alloc] initWithText:hypothesis andScore:[[NSNumber alloc] initWithDouble:0.0] andType:RapidEarsPartial];
-    [self sendOEEventToCallbacks:voiceEvent];
-}
-
-- (void) rapidEarsDidReceiveFinishedSpeechHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore
-{
-    NSLog(@"detected complete statement: %@",hypothesis);
-    // Generate and deliver the event
-    OEEvent *voiceEvent = [[OEEvent alloc] initWithText:hypothesis andScore:[[NSNumber alloc] initWithDouble:0.0] andType:RapidEarsResponse];
-    [self sendOEEventToCallbacks:voiceEvent];
-}
-
-- (void) rapidEarsDidDetectBeginningOfSpeech
-{
-    NSLog(@"rapidEarsDidDetectBeginningOfSpeech");
-}
-
-- (void) rapidEarsDidDetectEndOfSpeech
-{
-    NSLog(@"rapidEarsDidDetectEndOfSpeech");
 }
 
 - (void) pocketSphinxContinuousSetupDidFail
@@ -311,16 +281,6 @@ static OEManager *theManager = nil;
     NSLog(@"Changed to model %@", newLanguageModelPathAsString);
     OEEvent *voiceEvent = [[OEEvent alloc] initWithText:newLanguageModelPathAsString andScore:[[NSNumber alloc] initWithDouble:0.0] andType:OpenEarsStateChange];
     [self sendOEEventToCallbacks:voiceEvent];
-}
-
-// This ensures that the system doesn't get locked up with a big sentence.
-// Deprecated for use since RapidEars Implementation
-- (void) recordingCutoff
-{
-    /*NSLog(@"Recording is too long, cutting"); // Log it.
-    [_pocketsphinxController suspendRecognition];
-    //[_pocketsphinxController.continuousModel stopDevice];
-    _recordingCutoffTimer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(recordingResume) userInfo:nil repeats:NO];*/
 }
 
 - (void) recordingResume

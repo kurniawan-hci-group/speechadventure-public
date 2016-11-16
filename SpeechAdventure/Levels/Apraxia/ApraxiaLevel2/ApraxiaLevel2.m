@@ -275,7 +275,7 @@
     // We want only one word at a time
     [self updatePreviousValidSpeech:speechEvent.text];
     NSLog(@"Filtered speechEvent.\ntext:%@",filteredSpeechText);
-    if([self targetSentence].length > 1 && speechEvent.eventType == RapidEarsPartial) {
+    if([self targetSentence].length > 1 && speechEvent.eventType == OpenEarsResponse) {
         NSString * phraseParts = [self checkForPhraseParts:[self targetSentence] currentHypothesis:filteredSpeechText];
         bool phraseSaid = NO;
         if(phraseParts != nil && [self checkIfPhraseExists:[self targetSentence] currentHypothesis:phraseParts]) {

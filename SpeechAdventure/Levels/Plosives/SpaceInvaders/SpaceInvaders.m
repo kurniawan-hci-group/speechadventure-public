@@ -271,7 +271,7 @@
         //NSLog(@"Received speechEvent.\ntext:%@\nscore:%@",speechEvent.text,speechEvent.recognitionScore);
         NSString * filteredSpeechText = [[NSString alloc] initWithString:[self truncateFromPreviousValidSpeech:speechEvent.text]];
         NSLog(@"Filtered speechEvent.\ntext:%@",filteredSpeechText);
-        if([self targetSentence].length > 1 && speechEvent.eventType == RapidEarsPartial) {
+        if([self targetSentence].length > 1 && speechEvent.eventType == OpenEarsResponse) {
             NSString * phraseParts = [self checkForPhraseParts:[self targetSentence] currentHypothesis:filteredSpeechText];
             bool phraseSaid = NO;
             if(phraseParts != nil && [self checkIfPhraseExists:[self targetSentence] currentHypothesis:phraseParts])  {
